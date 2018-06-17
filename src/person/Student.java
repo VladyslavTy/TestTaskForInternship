@@ -5,6 +5,7 @@ import person.consciousness.Knowledge;
 public class Student {
     public String name;
     public Knowledge knowledge;
+
     public Student(String name) {
         this.name = name;
     }

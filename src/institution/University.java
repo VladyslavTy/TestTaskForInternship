@@ -4,7 +4,6 @@ import person.Student;
 import person.consciousness.Knowledge;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 public class University {
     String universityName;
