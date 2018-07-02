@@ -7,13 +7,17 @@ public class Student {
     public Knowledge knowledge;
     public double learningFactor;
 
-    public Student(String name) {
+
+    public Student(String name, double learningFactor) {
         this.name = name;
+        this.learningFactor = learningFactor;
     }
 
     public void setKnowledge(Knowledge knowledge) {
         this.knowledge = knowledge;
     }
+
+
 
 
 }
