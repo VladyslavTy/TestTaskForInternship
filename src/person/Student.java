@@ -6,7 +6,7 @@ public class Student {
     public String name;
     public Knowledge knowledge;
     public double learningFactor;
-
+    public boolean laptop = false;
 
     public Student(String name, double learningFactor) {
         this.name = name;
@@ -15,6 +15,10 @@ public class Student {
 
     public void setKnowledge(Knowledge knowledge) {
         this.knowledge = knowledge;
+    }
+
+    public void addLaptop(){
+        this.laptop = true;
     }
 
 }

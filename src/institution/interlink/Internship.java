@@ -9,10 +9,14 @@ import java.util.ArrayList;
 public class Internship extends SourseOfKnowledge {
     String name;
     Student student;
+    int factorOfPractice;
+    int factorOfTheory;
     ArrayList<Student> internshipList = new ArrayList<>();
 
-    public Internship(String name) {
+    public Internship(String name, int factorOfPractice, int factorOfTheory) {
         this.name = name;
+        this.factorOfPractice = factorOfPractice;
+        this.factorOfTheory = factorOfTheory;
     }
 
     public void setStudent(Student student) {
@@ -43,15 +47,15 @@ public class Internship extends SourseOfKnowledge {
 
     @Override
     public void givePracticalKnowledge(Student student) {
-        super.givePracticalKnowledge(student);
-            student.knowledge.levelOfPractic += student.learningFactor*2;
+
+            student.knowledge.levelOfPractice += student.learningFactor*factorOfPractice;
 
     }
 
     @Override
     public void giveTheoryKnowledge(Student student) {
         super.giveTheoryKnowledge(student);
-            student.knowledge.levelOfTheory += student.learningFactor*3;
+            student.knowledge.levelOfTheory += student.learningFactor*factorOfTheory;
 
     }
 }
