@@ -17,7 +17,4 @@ public class Student {
         this.knowledge = knowledge;
     }
 
-
-
-
 }

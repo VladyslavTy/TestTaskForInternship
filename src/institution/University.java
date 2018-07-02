@@ -24,20 +24,15 @@ public class University extends SourseOfKnowledge{
     }
 
     @Override
-    public void givePracticalKnowledge() {
-        super.givePracticalKnowledge();
-        for (Student student : students
-             ) {
-                student.knowledge.levelOfPractic += student.learningFactor*1;
-        }
+    public void givePracticalKnowledge(Student student) {
+        super.givePracticalKnowledge(student);
+        student.knowledge.levelOfPractic += student.learningFactor*1;
+
     }
 
     @Override
-    public void giveTheoryKnowledge() {
-        super.giveTheoryKnowledge();
-        for (Student student : students
-                ) {
-            student.knowledge.levelOfTheory += student.learningFactor*2;
-        }
+    public void giveTheoryKnowledge(Student student) {
+        super.giveTheoryKnowledge(student);
+        student.knowledge.levelOfTheory += student.learningFactor*2;
     }
 }

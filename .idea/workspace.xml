@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a3a3e8b8-e723-4c3b-85ac-01ec7f256660" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/institution/University.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/institution/University.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/institution/interlink/Internship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/institution/interlink/Internship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/person/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/person/Student.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="University.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="University.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/institution/University.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            <state relative-caret-position="255">
+              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,20 +40,21 @@
       <file leaf-file-name="Internship.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/institution/interlink/Internship.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+            <state relative-caret-position="495">
+              <caret line="55" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#formListOfStudents#0;class#Internship#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Student.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/person/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding>
                 <element signature="e#288#289#0" expanded="true" />
                 <element signature="e#330#331#0" expanded="true" />
@@ -61,11 +63,38 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Knowledge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/person/consciousness/Knowledge.java">
+      <file leaf-file-name="Meetup.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/institution/interlink/Meetup.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#241#242#0" expanded="true" />
+                <element signature="e#273#274#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SelfStudy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/person/SelfStudy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+              <folding>
+                <element signature="e#167#168#0" expanded="true" />
+                <element signature="e#205#206#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Knowledge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/person/consciousness/Knowledge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -73,8 +102,8 @@
       <file leaf-file-name="SourseOfKnowledge.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/institution/SourseOfKnowledge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="105">
+              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,13 +131,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/institution/interlink/Internship.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/person/consciousness/Knowledge.java" />
         <option value="$PROJECT_DIR$/src/main/Application.java" />
-        <option value="$PROJECT_DIR$/src/institution/SourseOfKnowledge.java" />
-        <option value="$PROJECT_DIR$/src/institution/University.java" />
+        <option value="$PROJECT_DIR$/src/person/consciousness/PracticalKnowledge.java" />
+        <option value="$PROJECT_DIR$/src/person/consciousness/Knowledge.java" />
         <option value="$PROJECT_DIR$/src/person/Student.java" />
+        <option value="$PROJECT_DIR$/src/institution/SourseOfKnowledge.java" />
+        <option value="$PROJECT_DIR$/src/institution/interlink/Internship.java" />
+        <option value="$PROJECT_DIR$/src/institution/interlink/Meetup.java" />
+        <option value="$PROJECT_DIR$/src/person/SelfStudy.java" />
+        <option value="$PROJECT_DIR$/src/institution/University.java" />
       </list>
     </option>
   </component>
@@ -149,6 +181,13 @@
               <item name="TaskForInternship" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="institution" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TaskForInternship" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TaskForInternship" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="institution" type="462c0819:PsiDirectoryNode" />
+              <item name="interlink" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TaskForInternship" type="b2602c69:ProjectViewProjectNode" />
@@ -275,7 +314,7 @@
       <workItem from="1529179702769" duration="8231000" />
       <workItem from="1529188835794" duration="1090000" />
       <workItem from="1529259184264" duration="455000" />
-      <workItem from="1530530857904" duration="4624000" />
+      <workItem from="1530530857904" duration="7276000" />
     </task>
     <task id="LOCAL-00001" summary="added application functionality">
       <created>1529188322049</created>
@@ -288,7 +327,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14400000" />
+    <option name="totallyTimeSpent" value="17052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1335" height="1054" extended-state="6" />
@@ -305,10 +344,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32827735" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25368503" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2257564" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -358,6 +397,7 @@
           <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#formListOfStudents#0;class#Internship#0" />
           </folding>
         </state>
       </provider>
@@ -410,6 +450,7 @@
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#formListOfStudents#0;class#Internship#0" />
           </folding>
         </state>
       </provider>
@@ -451,6 +492,7 @@
           <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#formListOfStudents#0;class#Internship#0" />
           </folding>
         </state>
       </provider>
@@ -485,20 +527,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/institution/SourseOfKnowledge.java">
+    <entry file="file://$PROJECT_DIR$/src/person/consciousness/PracticalKnowledge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/institution/interlink/Internship.java">
+    <entry file="file://$PROJECT_DIR$/src/institution/SourseOfKnowledge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="35" column="46" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="46" />
+        <state relative-caret-position="105">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -507,28 +550,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/person/consciousness/Knowledge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/person/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/institution/interlink/Internship.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="495">
+          <caret line="55" column="5" lean-forward="true" selection-start-line="43" selection-start-column="4" selection-end-line="55" selection-end-column="5" />
           <folding>
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#formListOfStudents#0;class#Internship#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/institution/interlink/Meetup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/institution/University.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/person/SelfStudy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/person/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" lean-forward="true" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding>
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
           </folding>
         </state>
       </provider>

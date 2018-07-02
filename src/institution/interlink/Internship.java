@@ -1,11 +1,12 @@
 package institution.interlink;
 
+import institution.SourseOfKnowledge;
 import institution.University;
 import person.Student;
 
 import java.util.ArrayList;
 
-public class Internship {
+public class Internship extends SourseOfKnowledge {
     String name;
     Student student;
     ArrayList<Student> internshipList = new ArrayList<>();
@@ -38,5 +39,19 @@ public class Internship {
                 internshipList.add(student);
             }
         }
+    }
+
+    @Override
+    public void givePracticalKnowledge(Student student) {
+        super.givePracticalKnowledge(student);
+            student.knowledge.levelOfPractic += student.learningFactor*2;
+
+    }
+
+    @Override
+    public void giveTheoryKnowledge(Student student) {
+        super.giveTheoryKnowledge(student);
+            student.knowledge.levelOfTheory += student.learningFactor*3;
+
     }
 }
