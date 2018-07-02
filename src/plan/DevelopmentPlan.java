@@ -1,6 +1,4 @@
-package person;
+package plan;
 
 public class DevelopmentPlan {
-
-
 }
