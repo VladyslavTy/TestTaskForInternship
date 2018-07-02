@@ -5,6 +5,7 @@ import person.consciousness.Knowledge;
 public class Student {
     public String name;
     public Knowledge knowledge;
+    public double learningFactor;
 
     public Student(String name) {
         this.name = name;
@@ -13,4 +14,6 @@ public class Student {
     public void setKnowledge(Knowledge knowledge) {
         this.knowledge = knowledge;
     }
+
+
 }
