@@ -4,6 +4,7 @@ import institution.KnowledgeSource;
 
 
 public class SelfStudy implements KnowledgeSource {
+
     int factorOfPractice;
     int factorOfTheory;
 
@@ -13,7 +14,15 @@ public class SelfStudy implements KnowledgeSource {
     }
 
     public void teach(Student student){
-       student.knowledge.levelOfTheory += factorOfTheory*student.learningFactor;
-       student.knowledge.levelOfPractice += factorOfPractice*student.learningFactor;
+        teachTheory(student);
+        teachPractice(student);
+    }
+
+    private void teachTheory(Student student){
+        student.learnTheory(factorOfTheory);
+    }
+
+    private void teachPractice(Student student){
+        student.learnPractice(factorOfPractice);
     }
 }

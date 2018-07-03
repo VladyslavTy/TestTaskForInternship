@@ -21,11 +21,7 @@ public class DevelopmentPlan {
     }
 
 
-    public void applyDevelopmentPlan(){
-        for (KnowledgeSource source : sources){
-            for (Student person: listOfStudents){
-                source.teach(person);
-            }
-        }
+    public void apply(Student student){
+
     }
 }

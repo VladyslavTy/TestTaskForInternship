@@ -24,26 +24,22 @@ public class University implements KnowledgeSource{
 
     }
 
-    public void addStudent(Student student, Knowledge knowledge) {
-        student.setKnowledge(knowledge);
+    public void addStudent(Student student) {
         students.add(student);
     }
 
-
     public void teach(Student student){
-        if(studentCheck(student)){
-            student.learn(factorOfTheory,factorOfPractice);
+        if(students.contains(student)){
+            teachTheory(student);
+            teachPractice(student);
         }
-
     }
 
-    private boolean studentCheck(Student persone){
-        for (Student student: students
-             ) {
-            if(persone == student){
-                return true;
-            }
-        }
-        return false;
+    private void teachTheory(Student student){
+       student.learnTheory(factorOfTheory);
+    }
+
+    private void teachPractice(Student student){
+        student.learnPractice(factorOfPractice);
     }
 }

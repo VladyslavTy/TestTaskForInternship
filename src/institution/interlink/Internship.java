@@ -46,20 +46,18 @@ public class Internship implements KnowledgeSource {
     }
 
     public void teach(Student student){
-        if(studentCheck(student)){
-            student.learn(factorOfTheory,factorOfPractice);
+        if(internshipList.contains(student)){
+            teachTheory(student);
+            teachPractice(student);
         }
-
     }
 
-    private boolean studentCheck(Student person){
-        for (Student student: internshipList
-                ) {
-            if(person == student){
-                return true;
-            }
-        }
-        return false;
+    private void teachTheory(Student student){
+        student.learnTheory(factorOfTheory);
+    }
+
+    private void teachPractice(Student student){
+        student.learnPractice(factorOfPractice);
     }
 }
 

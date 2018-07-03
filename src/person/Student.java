@@ -9,12 +9,9 @@ public class Student implements KnowledgeSource {
     public double learningFactor;
     public boolean laptop = false;
 
-    public Student(String name, double learningFactor) {
+    public Student(String name, double learningFactor, Knowledge knowledge) {
         this.name = name;
         this.learningFactor = learningFactor;
-    }
-
-    public void setKnowledge(Knowledge knowledge) {
         this.knowledge = knowledge;
     }
 
@@ -22,15 +19,28 @@ public class Student implements KnowledgeSource {
         this.laptop = true;
     }
 
-    public void learn(int theoryKnowledge, int practiceKnowledge){
+    public void learnTheory(int theoryKnowledge){
         this.knowledge.levelOfTheory += theoryKnowledge*this.learningFactor;
-        this.knowledge.levelOfPractice += practiceKnowledge*this.learningFactor;
+    }
+
+    public void learnPractice(int practiceKnowledge){
+        this.knowledge.levelOfTheory += practiceKnowledge*this.learningFactor;
+    }
+
+    private void teachTheory(Student student){
+        student.learnTheory(this.knowledge.levelOfTheory);
+    }
+
+    private void teachPractice(Student student){
+        student.learnPractice(this.knowledge.levelOfPractice);
     }
 
     public void teach(Student student){
-        if(this.knowledge.level > student.knowledge.level){
-            student.learn(this.knowledge.levelOfTheory, this.knowledge.levelOfPractice);
+        if(this.knowledge.levelOfTheory > student.knowledge.levelOfTheory){
+            teachTheory(student);
+        }
+        if(this.knowledge.levelOfPractice > student.knowledge.levelOfPractice){
+            teachPractice(student);
         }
     }
-
 }

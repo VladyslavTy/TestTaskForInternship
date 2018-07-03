@@ -1,11 +1,11 @@
 package institution.interlink;
 
-import institution.SourseOfKnowledge;
+import institution.KnowledgeSource;
 import person.Student;
 
 import java.util.ArrayList;
 
-public class Meetup extends SourseOfKnowledge {
+public class Meetup implements KnowledgeSource {
     String name;
     int factorOfPractice;
     int factorOfTheory;
@@ -18,12 +18,17 @@ public class Meetup extends SourseOfKnowledge {
     }
 
     public void teach(Student student){
+        teachTheory(student);
         if(student.laptop)
-            student.learn(factorOfTheory,factorOfPractice);
-        else
-            student.learn(factorOfTheory,0);
+            teachPractice(student);
+    }
 
+    private void teachTheory(Student student){
+        student.learnTheory(factorOfTheory);
+    }
 
+    private void teachPractice(Student student){
+        student.learnPractice(factorOfPractice);
     }
 
 }
