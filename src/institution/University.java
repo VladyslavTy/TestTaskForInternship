@@ -1,8 +1,6 @@
 package institution;
 
 import person.Student;
-import person.consciousness.Knowledge;
-
 import java.util.ArrayList;
 
 public class University implements KnowledgeSource{

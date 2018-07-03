@@ -2,8 +2,6 @@ package plan;
 
 import institution.KnowledgeSource;
 import person.Student;
-
-
 import java.util.ArrayList;
 
 public class DevelopmentPlan {
@@ -20,8 +18,10 @@ public class DevelopmentPlan {
         this.sources.add(source);
     }
 
-
     public void apply(Student student){
-
+        for (KnowledgeSource source : sources
+             ) {
+            source.teach(student);
+        }
     }
 }
