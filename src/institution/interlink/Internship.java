@@ -1,7 +1,6 @@
 package institution.interlink;
 
 import institution.KnowledgeSource;
-import institution.SourseOfKnowledge;
 import institution.University;
 import person.Student;
 

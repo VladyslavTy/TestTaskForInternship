@@ -1,15 +1,13 @@
 package person;
 
 import institution.KnowledgeSource;
-import institution.SourseOfKnowledge;
+
 
 public class SelfStudy implements KnowledgeSource {
-    Student student;
     int factorOfPractice;
     int factorOfTheory;
 
-    public SelfStudy(Student student, int factorOfPractice, int factorOfTheory) {
-        this.student = student;
+    public SelfStudy(int factorOfPractice, int factorOfTheory) {
         this.factorOfPractice = factorOfPractice;
         this.factorOfTheory = factorOfTheory;
     }
