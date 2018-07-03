@@ -17,20 +17,13 @@ public class Meetup extends SourseOfKnowledge {
         this.factorOfTheory = factorOfTheory;
     }
 
-    @Override
-    public void givePracticalKnowledge(Student student) {
-        super.givePracticalKnowledge(student);
-        if(student.laptop){
-            student.knowledge.levelOfPractice += student.learningFactor*factorOfPractice;
-        }
+    public void teach(Student student){
+        if(student.laptop)
+            student.learn(factorOfTheory,factorOfPractice);
         else
-            student.knowledge.levelOfPractice += student.learningFactor*0;
-    }
+            student.learn(factorOfTheory,0);
 
-    @Override
-    public void giveTheoryKnowledge(Student student) {
-        super.giveTheoryKnowledge(student);
-        student.knowledge.levelOfTheory += student.learningFactor*factorOfTheory;
 
     }
+
 }

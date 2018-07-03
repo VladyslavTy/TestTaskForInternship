@@ -1,12 +1,13 @@
 package institution.interlink;
 
+import institution.KnowledgeSource;
 import institution.SourseOfKnowledge;
 import institution.University;
 import person.Student;
 
 import java.util.ArrayList;
 
-public class Internship extends SourseOfKnowledge {
+public class Internship implements KnowledgeSource {
     String name;
     Student student;
     int factorOfPractice;
@@ -45,17 +46,21 @@ public class Internship extends SourseOfKnowledge {
         }
     }
 
-    @Override
-    public void givePracticalKnowledge(Student student) {
-
-            student.knowledge.levelOfPractice += student.learningFactor*factorOfPractice;
+    public void teach(Student student){
+        if(studentCheck(student)){
+            student.learn(factorOfTheory,factorOfPractice);
+        }
 
     }
 
-    @Override
-    public void giveTheoryKnowledge(Student student) {
-        super.giveTheoryKnowledge(student);
-            student.knowledge.levelOfTheory += student.learningFactor*factorOfTheory;
-
+    private boolean studentCheck(Student person){
+        for (Student student: internshipList
+                ) {
+            if(person == student){
+                return true;
+            }
+        }
+        return false;
     }
 }
+

@@ -1,8 +1,9 @@
 package person;
 
+import institution.KnowledgeSource;
 import institution.SourseOfKnowledge;
 
-public class SelfStudy extends SourseOfKnowledge {
+public class SelfStudy implements KnowledgeSource {
     Student student;
     int factorOfPractice;
     int factorOfTheory;
@@ -13,17 +14,8 @@ public class SelfStudy extends SourseOfKnowledge {
         this.factorOfTheory = factorOfTheory;
     }
 
-    @Override
-    public void givePracticalKnowledge(Student student) {
-        super.givePracticalKnowledge(student);
-        student.knowledge.levelOfPractice += student.learningFactor * factorOfPractice;
-
-    }
-
-    @Override
-    public void giveTheoryKnowledge(Student student) {
-        super.giveTheoryKnowledge(student);
-        student.knowledge.levelOfTheory += student.learningFactor * factorOfTheory;
-
+    public void teach(Student student){
+       student.knowledge.levelOfTheory += factorOfTheory*student.learningFactor;
+       student.knowledge.levelOfPractice += factorOfPractice*student.learningFactor;
     }
 }

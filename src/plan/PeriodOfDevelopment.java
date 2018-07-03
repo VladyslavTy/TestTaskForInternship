@@ -1,9 +1,20 @@
 package plan;
 
-import java.time.LocalDate;
+import institution.KnowledgeSource;
 
-public class Period {
+import java.time.LocalDate;
+import java.time.Period;
+
+public class PeriodOfDevelopment {
     LocalDate start;
     LocalDate finish;
-    Period
+    Period period;
+
+    public PeriodOfDevelopment(LocalDate start, LocalDate finish){
+        this.start = start;
+        this.finish = finish;
+        this.period = Period.between(start,finish);
+    }
+
+
 }

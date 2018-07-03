@@ -5,7 +5,7 @@ import person.consciousness.Knowledge;
 
 import java.util.ArrayList;
 
-public class University extends SourseOfKnowledge{
+public class University implements KnowledgeSource{
     String universityName;
     Student student;
     int factorOfPractice;
@@ -29,16 +29,21 @@ public class University extends SourseOfKnowledge{
         students.add(student);
     }
 
-    @Override
-    public void givePracticalKnowledge(Student student) {
-        super.givePracticalKnowledge(student);
-        student.knowledge.levelOfPractice += student.learningFactor*factorOfPractice;
+
+    public void teach(Student student){
+        if(studentCheck(student)){
+            student.learn(factorOfTheory,factorOfPractice);
+        }
 
     }
 
-    @Override
-    public void giveTheoryKnowledge(Student student) {
-        super.giveTheoryKnowledge(student);
-        student.knowledge.levelOfTheory += student.learningFactor*factorOfTheory;
+    private boolean studentCheck(Student persone){
+        for (Student student: students
+             ) {
+            if(persone == student){
+                return true;
+            }
+        }
+        return false;
     }
 }
