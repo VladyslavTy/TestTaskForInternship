@@ -1,29 +1,11 @@
 package institution;
 
 import person.Student;
-import java.util.ArrayList;
 
-public class University implements KnowledgeSource{
-    String universityName;
-    Student student;
-    int factorOfPractice;
-    int factorOfTheory;
+public class University extends Institution implements KnowledgeSource{
 
-    public ArrayList<Student> students = new ArrayList<>();
-
-    public University(String name, int factorOfPractice, int factorOfTheory) {
-        this.universityName = name;
-        this.factorOfPractice = factorOfPractice;
-        this.factorOfTheory = factorOfTheory;
-    }
-
-    public void setStudent(Student student) {
-        this.student = student;
-
-    }
-
-    public void addStudent(Student student) {
-        students.add(student);
+    public University(String name, int factorOfPractice, int factorOfTheory){
+        super(name,factorOfPractice,factorOfTheory);
     }
 
     public void teach(Student student){
@@ -31,13 +13,5 @@ public class University implements KnowledgeSource{
             teachTheory(student);
             teachPractice(student);
         }
-    }
-
-    private void teachTheory(Student student){
-       student.learnTheory(factorOfTheory);
-    }
-
-    private void teachPractice(Student student){
-        student.learnPractice(factorOfPractice);
     }
 }

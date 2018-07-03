@@ -1,33 +1,20 @@
 package institution.interlink;
 
+import institution.Institution;
 import institution.KnowledgeSource;
 import institution.University;
 import person.Student;
 
 import java.util.ArrayList;
 
-public class Internship implements KnowledgeSource {
-    String name;
-    Student student;
-    int factorOfPractice;
-    int factorOfTheory;
+public class Internship extends Institution implements KnowledgeSource {
     ArrayList<Student> internshipList = new ArrayList<>();
-
     public Internship(String name, int factorOfPractice, int factorOfTheory) {
-        this.name = name;
-        this.factorOfPractice = factorOfPractice;
-        this.factorOfTheory = factorOfTheory;
+        super(name, factorOfPractice, factorOfTheory);
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
-    }
-
-    public void getStudents(University university) {
+    public void addStudent(University university) {
         formListOfStudents(university);
-        for (Student student : internshipList) {
-            System.out.println(student.name);
-        }
     }
 
     //the formation of a list of students depending on the average level of knowledge
@@ -50,14 +37,6 @@ public class Internship implements KnowledgeSource {
             teachTheory(student);
             teachPractice(student);
         }
-    }
-
-    private void teachTheory(Student student){
-        student.learnTheory(factorOfTheory);
-    }
-
-    private void teachPractice(Student student){
-        student.learnPractice(factorOfPractice);
     }
 }
 

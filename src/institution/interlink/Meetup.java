@@ -1,20 +1,15 @@
 package institution.interlink;
 
+import institution.Institution;
 import institution.KnowledgeSource;
 import person.Student;
 
 import java.util.ArrayList;
 
-public class Meetup implements KnowledgeSource {
-    String name;
-    int factorOfPractice;
-    int factorOfTheory;
-    public ArrayList<Student> meetupList = new ArrayList<>();
+public class Meetup extends Institution implements KnowledgeSource {
 
     public Meetup(String name, int factorOfPractice, int factorOfTheory) {
-        this.name = name;
-        this.factorOfPractice = factorOfPractice;
-        this.factorOfTheory = factorOfTheory;
+        super(name, factorOfPractice, factorOfTheory);
     }
 
     public void teach(Student student){
@@ -22,13 +17,4 @@ public class Meetup implements KnowledgeSource {
         if(student.laptop)
             teachPractice(student);
     }
-
-    private void teachTheory(Student student){
-        student.learnTheory(factorOfTheory);
-    }
-
-    private void teachPractice(Student student){
-        student.learnPractice(factorOfPractice);
-    }
-
 }

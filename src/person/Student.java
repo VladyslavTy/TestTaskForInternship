@@ -7,7 +7,7 @@ public class Student implements KnowledgeSource {
     public String name;
     public Knowledge knowledge;
     public double learningFactor;
-    public boolean laptop = false;
+    public boolean laptopAvailable = false;
 
     public Student(String name, double learningFactor, Knowledge knowledge) {
         this.name = name;
@@ -15,8 +15,8 @@ public class Student implements KnowledgeSource {
         this.knowledge = knowledge;
     }
 
-    public void addLaptop(){
-        this.laptop = true;
+    public void addLaptopAvailable(){
+        this.laptopAvailable = true;
     }
 
     public void learnTheory(int theoryKnowledge){
