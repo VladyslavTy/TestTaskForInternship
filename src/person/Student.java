@@ -24,7 +24,7 @@ public class Student implements KnowledgeSource {
     }
 
     public void learnPractice(int practiceKnowledge){
-        this.knowledge.levelOfTheory += practiceKnowledge*this.learningFactor;
+        this.knowledge.levelOfPractice += practiceKnowledge*this.learningFactor;
     }
 
     private void teachTheory(Student student){

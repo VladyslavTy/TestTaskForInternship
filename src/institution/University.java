@@ -1,9 +1,6 @@
 package institution;
 
 import person.Student;
-import plan.PeriodOfDevelopment;
-
-import java.time.LocalDate;
 
 public class University extends Institution implements KnowledgeSource{
 

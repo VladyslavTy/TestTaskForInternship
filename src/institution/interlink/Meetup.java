@@ -14,7 +14,7 @@ public class Meetup extends Institution implements KnowledgeSource {
 
     public void teach(Student student){
         teachTheory(student);
-        if(student.laptop)
+        if(student.laptopAvailable)
             teachPractice(student);
     }
 }

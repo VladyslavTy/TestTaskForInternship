@@ -12,9 +12,10 @@ public class CompositeCondition implements Schedule {
     public boolean validate(LocalDate localDate) {
         for (Schedule condition: conditionsList
              ) {
-            if (!validate(localDate))
-                return false;
+            if (!condition.validate(localDate)) {
                 break;
+
+            }
         }
         return true;
     }

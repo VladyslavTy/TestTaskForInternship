@@ -11,8 +11,6 @@ public abstract class Institution {
     private String name;
     int factorOfPractice;
     int factorOfTheory;
-    Schedule condition;
-    PeriodOfDevelopment workPeriod;
 
     public ArrayList<Student> students = new ArrayList<>();
 
