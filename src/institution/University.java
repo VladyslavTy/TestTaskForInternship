@@ -5,7 +5,7 @@ import person.Student;
 public class University extends Institution implements KnowledgeSource{
 
 
-    public University(String name, int factorOfPractice, int factorOfTheory){
+    public University(String name, double factorOfPractice, double factorOfTheory){
         super(name,factorOfPractice,factorOfTheory);
     }
 

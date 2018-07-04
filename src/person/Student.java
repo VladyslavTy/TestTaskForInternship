@@ -19,11 +19,11 @@ public class Student implements KnowledgeSource {
         this.laptopAvailable = true;
     }
 
-    public void learnTheory(int theoryKnowledge){
+    public void learnTheory(double theoryKnowledge){
         this.knowledge.levelOfTheory += theoryKnowledge*this.learningFactor;
     }
 
-    public void learnPractice(int practiceKnowledge){
+    public void learnPractice(double practiceKnowledge){
         this.knowledge.levelOfPractice += practiceKnowledge*this.learningFactor;
     }
 

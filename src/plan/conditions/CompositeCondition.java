@@ -10,14 +10,15 @@ public class CompositeCondition implements Schedule {
 
     @Override
     public boolean validate(LocalDate localDate) {
+        boolean validate = true;
         for (Schedule condition: conditionsList
              ) {
             if (!condition.validate(localDate)) {
+                validate = false;
                 break;
-
-            }
+             }
         }
-        return true;
+        return validate;
     }
 
     @Override

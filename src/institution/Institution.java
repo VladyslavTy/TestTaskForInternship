@@ -9,12 +9,12 @@ import java.util.ArrayList;
 
 public abstract class Institution {
     private String name;
-    int factorOfPractice;
-    int factorOfTheory;
+    double factorOfPractice;
+    double factorOfTheory;
 
     public ArrayList<Student> students = new ArrayList<>();
 
-    public Institution(String name, int factorOfPractice, int factorOfTheory) {
+    public Institution(String name, double factorOfPractice, double factorOfTheory) {
         this.name = name;
         this.factorOfPractice = factorOfPractice;
         this.factorOfTheory = factorOfTheory;

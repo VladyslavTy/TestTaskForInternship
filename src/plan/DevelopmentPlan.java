@@ -2,17 +2,12 @@ package plan;
 
 import institution.KnowledgeSource;
 import person.Student;
-
 import java.time.LocalDate;
-import java.time.Period;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class DevelopmentPlan {
-
-
-    Period periodOfDevelopment;
 
     ArrayList<Student> students;
     Map<KnowledgeSource, Schedule> planEvents;
@@ -41,6 +36,9 @@ public class DevelopmentPlan {
                     source.teach(student);
                     printStudentKnowledge(student);
                     System.out.print("\n");
+                }
+                else {
+
                 }
             });
         }

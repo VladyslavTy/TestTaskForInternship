@@ -1,9 +1,9 @@
 package person.consciousness;
 
 public class Knowledge {
-    public int level;
-    public int levelOfPractice;
-    public int levelOfTheory;
+    public double level;
+    public double levelOfPractice;
+    public double levelOfTheory;
     public Knowledge(int levelOfPractice, int levelOfTheory) {
         this.levelOfTheory = levelOfTheory;
         this.levelOfPractice = levelOfPractice;

@@ -11,10 +11,10 @@ public class SelfStudy implements KnowledgeSource {
     }
 
     private void teachTheory(Student student){
-        student.learnTheory(student.knowledge.levelOfTheory);
+        student.learnTheory(0.1);
     }
 
     private void teachPractice(Student student){
-        student.learnPractice(student.knowledge.levelOfPractice);
+        student.learnPractice(0.1);
     }
 }

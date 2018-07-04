@@ -9,14 +9,14 @@ import java.util.ArrayList;
 
 public class Internship extends Institution implements KnowledgeSource {
     ArrayList<Student> internshipList = new ArrayList<>();
-    public Internship(String name, int factorOfPractice, int factorOfTheory) {
+    public Internship(String name, double factorOfPractice, double factorOfTheory) {
         super(name, factorOfPractice, factorOfTheory);
     }
 
     //the formation of a list of students depending on the average level of knowledge
     public void formListOfStudents(University university) {
-        int average;
-        int sum = 0;
+        double average;
+        double sum = 0;
         for (Student student : university.students) {
             sum = sum + student.knowledge.level;
         }

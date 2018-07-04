@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Meetup extends Institution implements KnowledgeSource {
 
-    public Meetup(String name, int factorOfPractice, int factorOfTheory) {
+    public Meetup(String name, double factorOfPractice, double factorOfTheory) {
         super(name, factorOfPractice, factorOfTheory);
     }
 

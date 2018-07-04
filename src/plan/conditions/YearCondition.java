@@ -16,7 +16,7 @@ public class YearCondition implements Schedule {
 
     @Override
     public boolean validate(LocalDate localDate) {
-        return (startYear >= localDate.getYear() && localDate.getYear() <= finishYear);
+        return (startYear <= localDate.getYear() && localDate.getYear() <= finishYear);
     }
 
     @Override
