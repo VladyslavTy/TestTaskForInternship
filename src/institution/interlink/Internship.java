@@ -13,12 +13,8 @@ public class Internship extends Institution implements KnowledgeSource {
         super(name, factorOfPractice, factorOfTheory);
     }
 
-    public void addStudent(University university) {
-        formListOfStudents(university);
-    }
-
     //the formation of a list of students depending on the average level of knowledge
-    private void formListOfStudents(University university) {
+    public void formListOfStudents(University university) {
         int average;
         int sum = 0;
         for (Student student : university.students) {

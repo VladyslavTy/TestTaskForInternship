@@ -1,13 +1,19 @@
 package institution;
 
 import person.Student;
+import plan.PeriodOfDevelopment;
+import plan.Schedule;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public abstract class Institution {
     private String name;
     int factorOfPractice;
     int factorOfTheory;
+    Schedule condition;
+    PeriodOfDevelopment workPeriod;
+
     public ArrayList<Student> students = new ArrayList<>();
 
     public Institution(String name, int factorOfPractice, int factorOfTheory) {

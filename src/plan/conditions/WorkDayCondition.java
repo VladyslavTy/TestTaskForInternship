@@ -16,4 +16,14 @@ public class WorkDayCondition implements Schedule {
         }
         return false;
     }
+
+    @Override
+    public void add(Schedule schedule) {
+
+    }
+
+    @Override
+    public void remove(Schedule schedule) {
+
+    }
 }

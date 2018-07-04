@@ -1,8 +1,12 @@
 package institution;
 
 import person.Student;
+import plan.PeriodOfDevelopment;
+
+import java.time.LocalDate;
 
 public class University extends Institution implements KnowledgeSource{
+
 
     public University(String name, int factorOfPractice, int factorOfTheory){
         super(name,factorOfPractice,factorOfTheory);
