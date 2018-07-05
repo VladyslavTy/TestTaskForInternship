@@ -3,17 +3,19 @@ package plan.conditions;
 import plan.Schedule;
 
 import java.time.LocalDate;
+import java.time.Month;
 
-public class OneDayInTheMonthCondition implements Schedule {
-    LocalDate meetingDate;
+public class MonthCondition implements Schedule {
 
-    public OneDayInTheMonthCondition(LocalDate meetingDate){
-        this.meetingDate = meetingDate;
+    Month month;
+
+    public MonthCondition(Month month){
+        this.month = month;
     }
 
     @Override
     public boolean validate(LocalDate localDate) {
-        return this.meetingDate.getDayOfMonth() != localDate.getDayOfMonth();
+        return localDate.getMonth() == this.month;
     }
 
     @Override

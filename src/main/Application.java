@@ -9,6 +9,7 @@ import person.consciousness.Knowledge;
 import plan.DevelopmentPlan;
 import plan.conditions.*;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.temporal.ChronoUnit;
@@ -39,6 +40,7 @@ public class Application {
 
         Meetup interlinkMeetup = new Meetup("Forming Async Mindset", 4,4);
         OneDayCondition oneDayMeetupCondition = new OneDayCondition(LocalDate.of(2018,Month.JULY,12));
+        WeekNumber secondWednesdayOfMonth = new WeekNumber(2, DayOfWeek.WEDNESDAY);
         interlinkMeetup.addStudent(firstStudent);
         interlinkMeetup.addStudent(secondStudent);
         interlinkMeetup.addStudent(thirdStudent);
@@ -56,11 +58,11 @@ public class Application {
         hardPlan.addStudent(otherStudent);
 
         DevelopmentPlan easyPlan = new DevelopmentPlan();
-        easyPlan.addStudent(secondStudent);
-        easyPlan.addPlanEvent(firstStudent,new WeekendCondition());
+        easyPlan.addStudent(firstStudent);
+        easyPlan.addPlanEvent(interlinkMeetup,secondWednesdayOfMonth);
 
-        long days = ChronoUnit.DAYS.between(LocalDate.of(2018, Month.JUNE, 29),LocalDate.of(2018, Month.DECEMBER, 20));
-        LocalDate currentDate = LocalDate.of(2018, Month.JUNE, 29);
+        long days = ChronoUnit.DAYS.between(LocalDate.of(2018, Month.JULY, 1),LocalDate.of(2018, Month.JULY, 31));
+        LocalDate currentDate = LocalDate.of(2018, Month.JUNE, 1);
 
         System.out.print(days + "\n");
         for(int i = 0; i <= days; i++){
