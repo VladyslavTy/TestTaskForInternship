@@ -36,10 +36,10 @@ public class Student implements KnowledgeSource {
     }
 
     public void teach(Student student){
-        if(this.knowledge.levelOfTheory > student.knowledge.levelOfTheory){
+        if(this.knowledge.levelOfTheory >= student.knowledge.levelOfTheory){
             teachTheory(student);
         }
-        if(this.knowledge.levelOfPractice > student.knowledge.levelOfPractice){
+        if(this.knowledge.levelOfPractice >= student.knowledge.levelOfPractice){
             teachPractice(student);
         }
     }

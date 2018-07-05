@@ -7,20 +7,18 @@ import person.SelfStudy;
 import person.Student;
 import person.consciousness.Knowledge;
 import plan.DevelopmentPlan;
-import plan.PeriodOfDevelopment;
 import plan.conditions.*;
 
 import java.time.LocalDate;
 import java.time.Month;
-import java.time.Period;
 import java.time.temporal.ChronoUnit;
 
 public class Application {
     public static void main(String[] args) {
-        Student firstStudent = new Student("Andrew Kostenko", 2, new Knowledge(10, 25));
-        Student secondStudent = new Student("Julia Veselkina", 2, new Knowledge(10, 11));
+        Student firstStudent = new Student("Andrew Kostenko", 0.6, new Knowledge(10, 25));
+        Student secondStudent = new Student("Julia Veselkina", 0.4, new Knowledge(10, 11));
         Student thirdStudent = new Student("Maria Perechrest", 1,new Knowledge(15, 17));
-        Student otherStudent = new Student("Taras Shevchenko", 1,new Knowledge(32, 21));
+        Student otherStudent = new Student("Taras Shevchenko", 0.1,new Knowledge(32, 21));
         otherStudent.addLaptopAvailable();
         secondStudent.addLaptopAvailable();
 
@@ -38,7 +36,6 @@ public class Application {
         CompositeCondition internshipCondition = new CompositeCondition();
         internshipCondition.add(new TimePeriodCondition(LocalDate.of(2018,Month.JULY,2),LocalDate.of(2018,Month.SEPTEMBER,27)));
         internshipCondition.add(new WorkDayCondition());
-        internship.addStudent(otherStudent);
 
         Meetup interlinkMeetup = new Meetup("Forming Async Mindset", 4,4);
         OneDayCondition oneDayMeetupCondition = new OneDayCondition(LocalDate.of(2018,Month.JULY,12));
@@ -59,15 +56,15 @@ public class Application {
         hardPlan.addStudent(otherStudent);
 
         DevelopmentPlan easyPlan = new DevelopmentPlan();
-        easyPlan.addStudent(firstStudent);
-        easyPlan.addPlanEvent(university,universityCondition);
+        easyPlan.addStudent(secondStudent);
+        easyPlan.addPlanEvent(firstStudent,new WeekendCondition());
 
         long days = ChronoUnit.DAYS.between(LocalDate.of(2018, Month.JUNE, 29),LocalDate.of(2018, Month.DECEMBER, 20));
         LocalDate currentDate = LocalDate.of(2018, Month.JUNE, 29);
 
         System.out.print(days + "\n");
         for(int i = 0; i <= days; i++){
-            hardPlan.apply(currentDate);
+            easyPlan.apply(currentDate);
             currentDate = LocalDate.of(currentDate.getYear(),currentDate.getMonth(),currentDate.getDayOfMonth()).plusDays(1);
         }
     }

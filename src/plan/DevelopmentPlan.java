@@ -37,14 +37,11 @@ public class DevelopmentPlan {
                     printStudentKnowledge(student);
                     System.out.print("\n");
                 }
-                else {
-
-                }
             });
         }
     }
 
     private void printStudentKnowledge(Student student){
-        System.out.print(student.knowledge.levelOfTheory + "," + student.knowledge.levelOfPractice);
+        System.out.print(String.format("%(.2f",student.knowledge.levelOfTheory) + "," + String.format("%(.2f",student.knowledge.levelOfPractice));
     }
 }
